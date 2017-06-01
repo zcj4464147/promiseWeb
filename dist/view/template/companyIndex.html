@@ -1,0 +1,9 @@
+<div ng-controller="companyIndexCtrl">
+	<div class="loginEnter" ng-hide="pageShow">
+		<p>欢迎: {{cookieMsg}}</p>
+		<div ui-sref="companyGetRecord">收到的简历</div>
+		<div ui-sref="collectCode">发布招聘</div>
+		<button ng-click="endLogin()">退出登录</button>
+	</div>
+</div>
+<div app-foot></div>

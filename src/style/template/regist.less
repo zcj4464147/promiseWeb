@@ -1,0 +1,134 @@
+@import '../variable.less';
+.regist{
+	.w(100%);
+	.h(630px);
+	background:url(../image/background.png) no-repeat;
+	background-size: 100% 100%;
+	>form{
+		.w(100%);
+		.h(300px);
+		padding-top:100px;
+		p{
+			margin:20px 0 0 120px;
+			color:@warnColor;
+		}
+		.regist_style{
+			.w(90%);
+			.h(40px);
+			position:relative;
+			margin:0 auto 2px auto;
+			label{
+				.w(15%);
+				.h(40px);
+				display:inline-block;
+				i{
+					.w(100%);
+					.h(40px);
+					.fs(30px);
+					text-align:center;
+					.lh(40px);
+					display:inline-block;
+					background-color:#919090;
+					color:@white;
+				};
+			}
+			
+			input{
+				.w(85%);
+				.h(40px);
+				background-color:#ccc;
+				.fs(16px);
+				padding-bottom:2px;
+				padding:0;
+				border:0;
+				opacity:0.4;
+				position:absolute;
+				top:0;
+				right:0;
+			};
+			input:-moz-placeholder   
+			 {   
+			    color: #fff;   
+			};  
+			input:-ms-input-placeholder   
+			{   
+			    color: #fff;   
+			};  
+			input::-webkit-input-placeholder
+			{   
+			    color: #fff;   
+			}; 
+			p{
+				position:absolute;
+				right:10px;
+				top:10px;
+				margin:0;
+				.fs(12px);
+				color:@warnColor;
+			}
+		};
+		.regist_code{
+			.w(90%);
+			.h(50px);
+			margin:50px auto 20px auto;
+			position:relative;
+			input{
+				.w(100px);
+				.h(50px);
+				.fs(25px);
+				border:0;
+				padding:0;
+				margin-right:20px;
+			};
+			span{
+				.w(100px);
+				.h(50px);
+				.fs(16px);
+				.lh(50px);
+				text-align:center;
+				display:inline-block;
+				background-color: #aaa;
+				color:#fff;
+				position: absolute;
+			};
+			div{
+				.w(100px);
+				.h(50px);
+				.fs(20px);
+				.lh(50px);
+				display:inline-block;
+				position: absolute;
+				right:0;
+				background-color:#12d5b5;
+				color:@white;
+				text-align:center;
+				cursor:pointer;
+			}
+	
+		};
+		.code_test{
+			margin:0;
+			.w(100%);
+			.h(30px);
+			text-align:center;
+		};
+		span{
+			.w(100%);
+			.h(30px);
+			display: block;
+			color:@warnColor;
+			text-align:center;
+		}
+		.registBtn{
+			.w(330px);
+			.h(50px);
+			.lh(50px);
+			margin:70px auto 0 auto;
+			text-align: center;
+			cursor:pointer;
+			.fs(20px);
+			color:@white;
+			background-color: #12d5b5;
+		};	
+	};
+};

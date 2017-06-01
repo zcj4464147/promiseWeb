@@ -1,0 +1,17 @@
+ <div class="text" ng-controller="mainCtrl">
+	<ul>
+	<!-- 	<a ui-sref="detail({id:key})"> -->
+			<li ui-sref="detail({id:value.id})" ng-repeat="(key, value) in list2">
+				<img ng-src="image/{{value.imgurl}}" alt="" width="80">
+				<div>
+					<p>
+						<span>{{value.companyname}}</span>
+						<span>{{value.empnum}}</span>
+					</p>
+					<p class="pression">{{value.salary}}</p>
+					<p>{{value.publishtime}}</p>
+				</div>
+			</li>
+		<!-- </a> -->
+	</ul>
+</div>

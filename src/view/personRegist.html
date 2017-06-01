@@ -1,0 +1,21 @@
+<div app-top-two  title="个人注册"></div>
+<div class="regist" ng-controller="registCtrl">
+	<form name='mf'>
+		<span>{{registTest}}</span>
+		<div class="regist_style">
+			<label for="username"><i class="icon iconfont icon-yonghu"></i></label><input type="text" placeholder="输入手机号" id="username" ng-model="username" name="username" ng-blur="checkUsername()">
+			<p ng-show="mf.username.$dirty">{{usernameMsg}}</p>
+		</div>
+		<div class="regist_style">
+			<label for="password"><i class="icon iconfont icon-mima"></i></label><input type="text" placeholder="输入密码" id="password" ng-model="password" name="password">
+			<p ng-show="mf.password.$dirty">{{passwordMsg}}</p>
+		</div>
+		<div class="regist_code">
+			<input type="text" ng-change="codeTest()" ng-model="codeInput">
+			<span>{{codeMsg}}</span>
+			<div ng-click="sendMsg()">发送短信</div>
+		</div>
+		<p class="code_test">{{codeTesting}}</p>
+		<div ng-click="personRegist()" class="registBtn">个人注册</div>
+	</form>
+</div>

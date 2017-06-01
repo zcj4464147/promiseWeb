@@ -1,0 +1,45 @@
+@import '../variable.less';
+
+.head{
+	background-color: @headBgColor;
+	.w(100%);
+	.h(40px);
+	.lh(40px);
+	padding: 0 7px;
+	position: fixed;
+	z-index:99;
+	div{
+		display:inline-block;
+		.h(40px);
+		.lh(40px);
+		color:@white;
+	}
+	a{
+		text-decoration:none;
+		display:inline-block;
+		float:right;
+		text-align: center;
+		color:@white;
+		.w(60px);
+		.h(20px);
+		.lh(20px);
+		.mt(10px);
+		.mr(20px);
+		background-color: #ed8c19;
+	}
+	.custom{
+		background-color: @warnColor;
+		border-color:@warnColor;
+		color: @defaultColor;
+		border-style:dashed;
+		.mt(9px);
+		.pl(15px);
+		.pr(15px);
+	};
+	.back-btn{
+		.fs(20px);
+		width: 1rem;
+		left: 0;
+	}
+};	
+

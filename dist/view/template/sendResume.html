@@ -1,0 +1,32 @@
+<div app-top-two  title="发布招聘"></div>
+<div ng-controller="sendResumeCtrl" class='company_Regist--content'>
+	<form action="" name="mf">
+		<div>
+			<span>企业名称:</span>
+			<input type="text" ng-model="companyName" name="company" class="mainInput">
+		</div>
+		<div>
+			<span>企业位置:</span>
+			<input type="text" ng-model="companyLocation" class="mainInput">
+		</div>
+		<div>
+			<span>职位:</span>
+			<input type="text" ng-model="companyPosition" name="company" class="mainInput">
+		</div>
+		<div>
+			<span>职位薪资:</span>
+			<input type="text" ng-model="positionSalary" name="company" class="mainInput">
+		</div>
+		<div>
+			<span>企业规模:</span>
+			<select  ng-model="companyPerson">
+				<option value="请选择企业人数" ng-selected>请选择企业人数</option>
+				<option value="少于50人">少于50人</option>
+				<option value="50~100人">50~100人</option>
+				<option value="100~500人">100~500人</option>
+				<option value="500人以上">500人以上</option>
+			</select>
+		</div>
+		<div ng-click="companyRegist()" class="companyRegistBtn">发布</div>
+	</form>
+</div>

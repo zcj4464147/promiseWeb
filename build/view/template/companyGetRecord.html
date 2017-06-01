@@ -1,0 +1,22 @@
+<div app-top-two  title="投递纪录" ></div>
+<div ng-controller="companyGetRecordCtrl" class="text">
+	<div class="deliver_state">
+	<span ng-click="allRecord($event)">全部</span>
+	<span ng-click="passRecord($event)">面试邀请</span>
+	<span ng-click="refuseRecord($event)">拒绝</span>
+	<span ng-click="uncheckRecord($event)">待处理</span>
+	</div>
+	<ul>
+		<li ng-repeat="(key, value) in msg">
+			<img ng-src="image/{{value.imgurl}}" alt="" width="80">
+			<div>
+				<p>
+					<span>{{value.company}}[{{value.city}}]</span>
+					<span>{{value.industry}}</span>
+				</p>
+				<p class="pression">{{value.salary}}</p>
+				<p>投递人:{{value.username}}</p>
+			</div>
+		</li>
+	</ul>
+</div>

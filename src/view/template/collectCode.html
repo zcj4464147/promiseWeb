@@ -1,0 +1,28 @@
+<div app-top-two  title="我的收藏" ></div>
+<div class="text" ng-controller="collectCodeCtrl">
+	<ul>
+			<li ui-sref="detail({id:value.id})" ng-repeat="(key, value) in collectCode">
+				<img ng-src="image/{{value.imgurl}}" alt="" width="80">
+				<div>
+					<p>
+						<span>{{value.companyname}}</span>
+						<span>{{value.empnum}}</span>
+					</p>
+					<p class="pression">{{value.salary}}</p>
+					<p>{{value.publishtime}}</p>
+				</div>
+				<span><img ng-src="image/{{imgName}}" ng-click="starClick($event,value.id)" alt=""></span>
+			</li>
+		<!-- </a> -->
+	</ul>
+	<div class="model"  ng-show="flag">
+		<div class="model_top">
+			<span>确定取消收藏{{companyName}}吗</span>
+			<span class="model_delete" ng-click="flag=!flag">&times;</span>
+		</div>
+		<div class="model_content">
+			<button type="button" ng-click="flag=!flag">取消</button>
+			<button type="button" ng-click="deleteCollect(idValue)" >确定</button>
+		</div>
+	</div>
+</div>

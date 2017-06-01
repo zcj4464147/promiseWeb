@@ -1,0 +1,88 @@
+@import '../variable.less';
+.company{
+	.w(100%);
+	.h(627px);
+	.pt(10px);
+	background-color: #fff;
+	>span{
+		position: absolute;
+		right:20px;
+		top:60px;
+	}
+}
+.detailTop{
+	background-color: @headBgColor;
+	.w(100%);
+	.h(40px);
+	.lh(40px);
+	padding: 0 7px;
+	text-align:center;
+	position: fixed;
+	z-index:99;
+	color:@white;
+	.fs(16px);
+		span{
+		float:left;
+		.w(40px);
+		.h(40px);
+		.lh(40px);
+		position:absolute;
+		left:0;
+	}
+};
+.company_position{
+	.w(70%);
+	.h(30px);
+	.lh(30px);
+	
+	.ml(20px);
+	padding-top: 30px;
+	display:flex;
+	justify-content:space-between;
+	.position_money{
+		color:@warnColor;
+	}
+}
+.company_place{
+	.w(90%);
+	.h(40px);
+	.lh(40px);
+	border-bottom:1px #aaa solid;
+	margin:0 auto;
+}
+.company_introduce{
+	.w(90%);
+	.h(100px);
+	border-bottom:1px #aaa solid;
+	border-top:1px #aaa solid;
+	margin:30px auto 0 auto;
+	display:flex;
+	justify-content:space-around;
+	background-color: #fff;
+	img{
+		.w(70px);
+		.h(70px);
+		margin:15px 0 0 10px;
+	}
+}
+.position_introduce{
+	.w(90%);
+	.h(50px);
+	.lh(50px);
+	margin: 0 auto;
+	border-top:10px #ccc solid;
+	border-bottom:1px solid #ccc;
+}
+.goLogin,.deliver{
+	.w(100%);
+	.h(40px);
+	.lh(40px);
+	.fs(20px);
+	color:@white;
+	display:block;
+	position:fixed;
+	bottom:0;
+	text-align:center;
+	background-color:@headBgColor;
+	
+};

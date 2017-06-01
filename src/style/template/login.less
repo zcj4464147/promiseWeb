@@ -1,0 +1,139 @@
+@import '../variable.less';
+.loginPage{
+	.w(80%);
+	.h(40px);
+	.lh(40px);
+	.fs(20px);
+	color:@white;
+	border-radius:5px;
+	box-shadow:5px 5px 5px 2px #b2dfd8;
+	cursor: pointer;
+	margin:250px auto 0 auto;
+	background-color:#12d5b5;
+	text-align:center;
+}
+.login{
+	.w(100%);
+	.h(630px);
+	background:url(../image/background.png) no-repeat;
+	background-size: 100% 100%;
+	>form{
+		.w(100%);
+		.h(300px);
+		padding-top:200px;
+		p{
+			.w(100%);
+			text-align:center;
+			margin:20px 0 5px 0;
+			color:@warnColor;
+		}
+		.login_style{
+			.w(80%);
+			.h(40px);
+			position:relative;
+			margin:0 auto 2px auto;
+			label{
+				.w(15%);
+				.h(40px);
+				display:inline-block;
+				i{
+					.w(100%);
+					.h(40px);
+					.fs(30px);
+					text-align:center;
+					.lh(40px);
+					display:inline-block;
+					background-color:#919090;
+					color:@white;
+				};
+			}
+			
+			input{
+				.w(85%);
+				.h(40px);
+				background-color:#ccc;
+				.fs(16px);
+				padding-bottom:2px;
+				padding:0;
+				border:0;
+				opacity:0.4;
+				position:absolute;
+				top:0;
+				right:0;
+			};
+			input:-moz-placeholder   
+			 {   
+			    color: #fff;   
+			};  
+			input:-ms-input-placeholder   
+			{   
+			    color: #fff;   
+			};  
+			input::-webkit-input-placeholder
+			{   
+			    color: #fff;   
+			}; 
+			p{
+				position:absolute;
+				right:10px;
+				top:10px;
+				margin:0;
+				.fs(12px);
+				color:@warnColor;
+			}
+		};
+		.loginBtn{
+			.w(300px);
+			.h(160px);
+			.lh(40px);
+			
+			display:flex;
+			flex-wrap:wrap;
+			margin:70px auto 0 auto;
+			div{
+				.w(140px);
+				.h(70px);
+				.lh(70px);
+				text-align: center;
+				cursor:pointer;
+				.fs(20px);
+				color:@white;
+				background-color: #12d5b5;
+				margin:0 10px 10px 0;
+			};
+		};	
+	};
+};
+.loginEnter{
+	p{
+		.w(100%);
+		.h(20px);
+		.fs(20px);
+		text-align:center;
+		.mt(120px);
+	};
+	div{
+		.w(150px);
+		.h(100px);
+		.lh(100px);
+		.mt(50px);
+		color:@white;
+		margin-left:20px;
+		margin-bottom:50px;
+		float:left;
+		background-color:#12d5b5;
+		text-align: center;
+	};
+	button{
+		.w(90%);
+		.h(40px);
+		.lh(40px);
+		.fs(20px);
+		background-color:@warnColor; 
+		color:@white;
+		display:block;
+		margin: 0 auto;
+	}
+
+
+}

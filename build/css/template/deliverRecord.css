@@ -1,0 +1,14 @@
+.deliver_state {
+  width: 100%;
+  height: 40px;
+}
+.deliver_state span {
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  padding-top: 5px;
+  cursor: pointer;
+}

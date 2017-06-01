@@ -1,0 +1,36 @@
+<div class="search_top">
+	<span class="cancel" ng-click="inputSet($event)">取消</span>
+	<input type="text" placeholder="搜索职位/公司／城市" ng-model="topSearch">
+	<span class="search">搜索</span>
+</div>
+<div class="search_item">
+	<span ng-click="cityClick()" ng-bind="cityValue"></span>
+	<span ng-click="salaryClick()" ng-bind="salaryValue"></span>
+	<span ng-click="amountClick()" ng-bind="amountValue">公司规模</span>
+</div>
+<div class='search_content'>
+		<ul>
+	<!-- 	<a ui-sref="detail({id:key})"> -->
+			<li ui-sref="detail({id:value.id})" ng-repeat="(key, value) in list2 | search : topSearch : cityValue : salaryValue : amountValue">
+				<img ng-src="image/{{value.imgurl}}" alt="" width="80">
+				<div>
+					<p>
+						<span>{{value.companyname}}</span>
+						<span>{{value.empnum}}</span>
+					</p>
+					<p class="pression">{{value.salary}}</p>
+					<p>{{value.publishtime}}</p>
+				</div>
+			</li>
+		<!-- </a> -->
+	</ul>
+</div>
+<div app-foot></div>
+<div class="search_background" ng-show="cityShow" ng-click="backgroundCity()"></div>
+<div class="search_city" ng-show="cityShow">
+	<ul>
+		<li ng-repeat="value in getData" ng-click="selectCity()">{{value}}</li>
+		
+	</ul>
+	<span ng-click="backgroundCity()">取消</span>
+</div>

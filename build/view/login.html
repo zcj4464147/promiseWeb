@@ -1,0 +1,20 @@
+<div class="login" ng-controller="loginCtrl">
+	<form name='mf'>
+	<p >{{loginMsg}}</p>
+		<div class="login_style">
+			<label for="username"><i class="icon iconfont icon-yonghu"></i></label><input type="text" placeholder="输入手机号" id="username" ng-model="username" name="username">
+			<p ng-show="mf.username.$dirty">{{usernameMsg}}</p>
+		</div>
+		<div class="login_style">
+			<label for="password"><i class="icon iconfont icon-mima"></i></label><input type="text" placeholder="输入密码" id="password" ng-model="password" name="password">
+			<p ng-show="mf.password.$dirty">{{passwordMsg}}</p>
+		</div>
+		<div class="loginBtn">
+			<div ng-click="personLogin()">个人登录</div>
+			<div ng-click="companyLogin()">企业登录</div>
+			<div ui-sref="personRegist">个人注册</div>
+			<div ui-sref="companyRegist">企业注册</div>
+		</div>	
+	</form>
+</div>
+<div app-foot></div>  

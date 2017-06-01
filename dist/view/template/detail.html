@@ -1,0 +1,22 @@
+<div app-top-two  title="职位详情"></div>
+<div ng-controller="detailCtrl" class="company">
+	<span  ng-click="collect()" ng-hide="companyLogin"><img src="image/{{imgName}}" alt=""></span>
+	<div class="company_position">
+		<span>{{msg.industry}}</span>
+		<span class="position_money">{{msg.salary}}</span>
+	</div>
+	<div class="company_place">上班地点:{{msg.cityname}}</div>
+	<div class="company_introduce">
+		<img src="image/{{msg.imgurl}}" alt="">
+		<div>
+			<p>{{msg.companyname}}</p>
+			<p>{{msg.empnum}}</p>
+		</div>
+	</div>
+	<div class="position_introduce">职位描述</div>
+	<div ng-hide="companyLogin">
+		<div class="goLogin" ng-if="flag" ui-sref="login">去登录</div>
+    	<input type="button" class="deliver" ng-hide="flag" ng-click="deliverResume()" ng-disabled="btnState"  value="{{deliver}}">	
+	</div>
+</div>
+

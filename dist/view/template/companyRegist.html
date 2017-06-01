@@ -1,0 +1,28 @@
+<div app-top-two  title="企业注册"></div>
+<div ng-controller="companyRegistCtrl" class='company_Regist--content'>
+	<form name='mf'>
+		<p>{{promptMsg}}</p>
+		<div>
+			<span>用户名:</span>
+			<input type="text" ng-model="companyName" name="companyUsername" class="mainInput">
+			<p  ng-if="mf.companyUsername.$dirty">{{usernameMsg}}</p>
+		</div>
+		<div>
+			<span>密码:</span>
+			<input type="text" ng-model="companyPassword" name="companyPassword" class="mainInput">
+			<p  ng-if="mf.companyPassword.$dirty">{{passwordMsg}}</p>
+		</div>
+		<div>
+			<span>企业名称:</span>
+			<input type="text" ng-model="company" name="company" class="mainInput">
+			<p  ng-if="mf.company.$dirty">{{companyMsg}}</p>
+		</div>
+		<div class="companyRegist_code">
+			<input type="text" ng-change="companyCodeTest()" ng-model="companyCodeInput">
+			<span>{{companyCode}}</span>
+			<div ng-click="companySendMsg()">发送短信</div>
+		</div>
+		<a>{{companyCodePrompt}}</a>
+		<div ng-click="companyRegist()" class="companyRegistBtn">企业注册</div>
+	</form>
+</div>	
